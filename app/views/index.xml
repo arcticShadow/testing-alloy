@@ -1,0 +1,19 @@
+<Alloy>
+	<TabGroup id="tabGroup">
+		<Tab title="Tab 1" icon="KS_nav_ui.png">
+			<Window title="Tab 1">
+                <Label>I am Window 1</Label>
+                <Menu id="menu" platform="android">
+                    <MenuItem id="menuItem" title="Item 1" icon="images/action_about.png" showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" />
+                    <MenuItem id="menuItem" title="Item 2" icon="images/action_settings.png" showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" />
+                    <MenuItem id="menuItem" title="Item 3" icon="images/action_about.png" showAsAction="Ti.Android.SHOW_AS_ACTION_NEVER" />
+                </Menu> 
+			</Window>
+		</Tab>
+		<Tab title="Tab 2" icon="KS_nav_views.png">
+			<Window title="Tab 2">
+				<Label>I am Window 2</Label>
+			</Window>
+		</Tab>
+	</TabGroup>
+</Alloy>
