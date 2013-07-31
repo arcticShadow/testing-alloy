@@ -12,9 +12,10 @@
 
 		</Tab>
 		<Tab title="Tab 2" icon="KS_nav_views.png">
-			<Window title="Tab 2">
-				<Label>I am Window 2</Label>
-			</Window>
+			<Require src="scanner"/>
 		</Tab>
+		<Tab title="DATA">
+			<Require src="data"/>
+        </Tab>
 	</TabGroup>
 </Alloy>

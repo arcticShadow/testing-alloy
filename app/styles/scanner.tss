@@ -1,13 +1,20 @@
 "Window": {
-	backgroundColor: "#fff"
+	backgroundColor: "#def3fb",
+	layout: 'vertical'
 },
 "Label": {
-	width: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
 	height: Ti.UI.SIZE,
-	color: "#000",
+	color: "#586164",
 	font: {
 		fontSize: 20,
 		fontFamily: 'Helvetica Neue, Droid Sans'
 	},
 	textAlign: 'center'
-} 
+},
+".bigger": {
+	font: {
+		fontSize: 40
+	}
+}
+

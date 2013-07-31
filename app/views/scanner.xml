@@ -1,0 +1,6 @@
+<Alloy>
+	<Window title="Scanner" id="scanner">
+		<Label class="bigger">This will be your Scanner</Label>
+		<Label>Scan, Scan, Scan, Scan, Scan, Scan, Scan, Scan, Scan, Scan, Scan</Label>
+	</Window>
+</Alloy>

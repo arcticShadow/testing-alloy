@@ -1,0 +1,10 @@
+<Alloy>
+	<!--Collection src="drupalnodes" /-->
+	<Window title="Data" layout="vertical">
+		<Label>Data</Label>
+		<ScrollableView id="scroll" layout="vertical" >
+			<!-- Also can use Require -->
+			<Label>1st</Label>
+		</ScrollableView>
+	</Window>
+</Alloy>
