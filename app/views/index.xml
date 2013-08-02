@@ -1,4 +1,5 @@
 <Alloy>
+	<Collection src="drupalnodes" />
 	<TabGroup id="tabGroup">
 		<Tab title="Tab 1" icon="KS_nav_ui.png">
 			<Window title="Tab 1">
@@ -6,16 +7,21 @@
     			<Menu id="menu" platform="android">
 			        <MenuItem id="menuItem" title="Item 1" icon="images/action_about.png" showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" />
 			        <MenuItem id="menuItem" title="Item 2" icon="images/action_settings.png" showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" />
-			        <MenuItem id="menuItem" title="Item 3" icon="images/action_about.png" showAsAction="Ti.Android.SHOW_AS_ACTION_NEVER" />
+			        <MenuItem id="menuItem" title="Item 3" icon="images/action_about.png" showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" />
 			    </Menu>
+		        <!--TableView dataCollection="book" dataTransform="transformFunction" dataFilter="filterFunction"-->
+		        <TableView dataCollection="drupalnodes" >
+		        	<!-- Also can use Require -->
+		        	<TableViewRow title="{title}" />
+		        </TableView>
 			</Window>
 
 		</Tab>
 		<Tab title="Tab 2" icon="KS_nav_views.png">
 			<Require src="scanner"/>
 		</Tab>
-		<Tab title="DATA">
+		<!--Tab title="DATA">
 			<Require src="data"/>
-        </Tab>
+        </Tab-->
 	</TabGroup>
 </Alloy>

@@ -10,19 +10,19 @@ function Controller() {
         id: "data"
     });
     $.__views.data && $.addTopLevelView($.__views.data);
-    $.__views.__alloyId14 = Ti.UI.createLabel({
+    $.__views.__alloyId20 = Ti.UI.createLabel({
         text: "Data",
-        id: "__alloyId14"
+        id: "__alloyId20"
     });
-    $.__views.data.add($.__views.__alloyId14);
-    var __alloyId15 = [];
-    $.__views.__alloyId16 = Ti.UI.createLabel({
+    $.__views.data.add($.__views.__alloyId20);
+    var __alloyId21 = [];
+    $.__views.__alloyId22 = Ti.UI.createLabel({
         text: "1st",
-        id: "__alloyId16"
+        id: "__alloyId22"
     });
-    __alloyId15.push($.__views.__alloyId16);
+    __alloyId21.push($.__views.__alloyId22);
     $.__views.scroll = Ti.UI.createScrollableView({
-        views: __alloyId15,
+        views: __alloyId21,
         id: "scroll",
         layout: "vertical"
     });
@@ -30,23 +30,7 @@ function Controller() {
     exports.destroy = function() {};
     _.extend($, $.__views);
     var collection = Alloy.createCollection("drupalnodes");
-    collection.fetch({
-        success: function() {
-            var myarray = Array();
-            _.each(collection.models, function(element) {
-                Ti.API.log("Node: Nid:" + element.get("nid") + " Title:" + element.get("title"));
-                var label = Ti.UI.createLabel({
-                    title: "nid: " + element.get("nid") + " Title: " + element.get("title")
-                });
-                myarray.push(label);
-                $.add(label);
-            });
-            $.scroll.setViews(myarray);
-        },
-        error: function() {
-            Ti.API.error("hmm - this is not good!");
-        }
-    });
+    collection.fetch();
     _.extend($, exports);
 }
 

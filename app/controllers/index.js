@@ -9,5 +9,10 @@ $.tabGroup.addEventListener('open', function(e) {
         };  
     }
 });
- 
+
+ // Trigger the synchronization
+var library = Alloy.Collections.drupalnodes;
+library.fetch(1);
+
 $.tabGroup.open();
+

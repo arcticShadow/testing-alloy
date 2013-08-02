@@ -1,6 +1,6 @@
 exports.definition = {  
     config: {
-        "URL": "http://apptest.saturn.netactive.co.nz/apptest/node",
+        "URL": "http://apptest.saturn.netactive.co.nz/apptest",
         //"debug": 1, 
         "adapter": {
             "type": "restapi",
